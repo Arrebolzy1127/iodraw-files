@@ -1,302 +1,302 @@
 <mxfile host="www.iodraw.com" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0" version="24.7.17">
   <diagram name="第 1 页" id="bIKsGyIGh-V-KAhClr1p">
-    <mxGraphModel dx="1002" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2004" dy="1118" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="0RplUrGnFsplLeNN9teG-1" value="面向工业场景的超边缘分布式算力组织与确定性推理" style="text;html=1;strokeColor=none;fillColor=none;align=center;              verticalAlign=middle;whiteSpace=wrap;rounded=0;              fontSize=22;fontStyle=1;fontColor=#1A1A2E;" vertex="1" parent="1">
-          <mxGeometry x="200" y="14" width="1200" height="34" as="geometry" />
+          <mxGeometry x="140" y="14" width="1200" height="34" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-2" value="通感算一体化 · 群体智能体决策 · 分布式协同推理  系统架构" style="text;html=1;strokeColor=none;fillColor=none;align=center;              verticalAlign=middle;whiteSpace=wrap;rounded=0;              fontSize=13;fontColor=#666666;" vertex="1" parent="1">
-          <mxGeometry x="300" y="50" width="1000" height="22" as="geometry" />
+          <mxGeometry x="240" y="50" width="1000" height="22" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A5276;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="80" y="77" width="460" height="4" as="geometry" />
+          <mxGeometry x="20" y="77" width="460" height="4" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6C3483;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="540" y="77" width="520" height="4" as="geometry" />
+          <mxGeometry x="480" y="77" width="520" height="4" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D35400;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1060" y="77" width="460" height="4" as="geometry" />
+          <mxGeometry x="1000" y="77" width="460" height="4" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-6" value="" style="rounded=10;whiteSpace=wrap;html=1;              fillColor=#FEF9E7;strokeColor=#D35400;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="80" y="88" width="1440" height="220" as="geometry" />
+          <mxGeometry x="20" y="88" width="1440" height="220" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-7" value="顶层 4.3　基于隐私保护与 Stackelberg 博弈的通感算多维联合优化" style="text;html=1;strokeColor=none;fillColor=none;align=left;              verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#D35400;" vertex="1" parent="1">
-          <mxGeometry x="100" y="92" width="900" height="22" as="geometry" />
+          <mxGeometry x="40" y="92" width="900" height="22" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-8" value="" style="rounded=10;whiteSpace=wrap;html=1;              fillColor=#FDEBD0;strokeColor=#D35400;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="118" width="430" height="172" as="geometry" />
+          <mxGeometry x="40" y="118" width="430" height="172" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-9" value="🔶  ISCC 全局综合能效优化" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=12;fontStyle=1;fontColor=#D35400;" vertex="1" parent="1">
-          <mxGeometry x="110" y="123" width="410" height="20" as="geometry" />
+          <mxGeometry x="50" y="123" width="410" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-10" value="感知 ∩ 通信 ∩ 计算" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FADBD8;              strokeColor=#D35400;fontSize=10;fontColor=#D35400;" vertex="1" parent="1">
-          <mxGeometry x="115" y="148" width="125" height="46" as="geometry" />
+          <mxGeometry x="55" y="148" width="125" height="46" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-11" value="max EE = Σ(计算收益 + 感知增益) / 综合能耗" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#FFFFFF;              strokeColor=#D35400;fontSize=10;fontStyle=2;" vertex="1" parent="1">
-          <mxGeometry x="252" y="150" width="268" height="36" as="geometry" />
+          <mxGeometry x="192" y="150" width="268" height="36" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-12" value="约束：CRB 感知下界 · 端到端时延上限 · 热功耗阈值" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=10;fontColor=#7D6608;" vertex="1" parent="1">
-          <mxGeometry x="110" y="200" width="410" height="18" as="geometry" />
+          <mxGeometry x="50" y="200" width="410" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-13" value="求解：交替优化(AO) + 连续凸近似(SCA) + Lyapunov 随机优化" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=10;fontColor=#7D6608;" vertex="1" parent="1">
-          <mxGeometry x="110" y="220" width="410" height="18" as="geometry" />
+          <mxGeometry x="50" y="220" width="410" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-14" value="🎯 综合能效提升 ≥20%" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=10;fontStyle=3;fontColor=#D35400;" vertex="1" parent="1">
-          <mxGeometry x="110" y="242" width="410" height="18" as="geometry" />
+          <mxGeometry x="50" y="242" width="410" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-15" value="" style="rounded=10;whiteSpace=wrap;html=1;              fillColor=#FEF9E7;strokeColor=#D35400;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="555" y="118" width="430" height="172" as="geometry" />
+          <mxGeometry x="495" y="118" width="430" height="172" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-16" value="🎯  两阶段 Stackelberg 主从博弈" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=12;fontStyle=1;fontColor=#D35400;" vertex="1" parent="1">
-          <mxGeometry x="565" y="123" width="410" height="20" as="geometry" />
+          <mxGeometry x="505" y="123" width="410" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-17" value="平台领导者（Leader）&#xa;发布单位激励价格 p_i" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#D35400;              strokeColor=#922B21;fontColor=#FFFFFF;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="635" y="148" width="270" height="38" as="geometry" />
+          <mxGeometry x="575" y="148" width="270" height="38" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-18" value="定价博弈 ⇄ 资源响应" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=10;fontColor=#D35400;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="635" y="188" width="270" height="16" as="geometry" />
+          <mxGeometry x="575" y="188" width="270" height="16" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-19" value="终端节点 1&#xa;贡献量 q_1" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#FAD7A0;              strokeColor=#D35400;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="572" y="208" width="108" height="38" as="geometry" />
+          <mxGeometry x="512" y="208" width="108" height="38" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-20" value="终端节点 2&#xa;贡献量 q_2" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#FAD7A0;              strokeColor=#D35400;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="716" y="208" width="108" height="38" as="geometry" />
+          <mxGeometry x="656" y="208" width="108" height="38" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-21" value="终端节点 n&#xa;贡献量 q_n" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#FAD7A0;              strokeColor=#D35400;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="860" y="208" width="108" height="38" as="geometry" />
+          <mxGeometry x="800" y="208" width="108" height="38" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-22" value="均衡求解：逆向归纳法 · Stackelberg Nash 均衡" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=10;fontColor=#7D6608;" vertex="1" parent="1">
-          <mxGeometry x="565" y="252" width="410" height="18" as="geometry" />
+          <mxGeometry x="505" y="252" width="410" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-23" value="" style="endArrow=open;html=1;strokeColor=#D35400;strokeWidth=1.5;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="680" y="186" as="sourcePoint" />
-            <mxPoint x="626" y="208" as="targetPoint" />
+            <mxPoint x="620" y="186" as="sourcePoint" />
+            <mxPoint x="566" y="208" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-24" value="" style="endArrow=open;html=1;strokeColor=#D35400;strokeWidth=1.5;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="770" y="186" as="sourcePoint" />
-            <mxPoint x="770" y="208" as="targetPoint" />
+            <mxPoint x="710" y="186" as="sourcePoint" />
+            <mxPoint x="710" y="208" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-25" value="" style="endArrow=open;html=1;strokeColor=#D35400;strokeWidth=1.5;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="860" y="186" as="sourcePoint" />
-            <mxPoint x="914" y="208" as="targetPoint" />
+            <mxPoint x="800" y="186" as="sourcePoint" />
+            <mxPoint x="854" y="208" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-26" value="" style="rounded=10;whiteSpace=wrap;html=1;              fillColor=#EAFAF1;strokeColor=#1E8449;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="118" width="490" height="172" as="geometry" />
+          <mxGeometry x="950" y="118" width="490" height="172" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-27" value="🛡  自适应局部差分隐私（LDP）" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=12;fontStyle=1;fontColor=#1E8449;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="123" width="470" height="20" as="geometry" />
+          <mxGeometry x="960" y="123" width="470" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-28" value="数据可用 · 不可见" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=20;fontStyle=1;fontColor=#E74C3C;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="148" width="470" height="30" as="geometry" />
+          <mxGeometry x="960" y="148" width="470" height="30" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-29" value="📌  拉普拉斯 / 高斯机制噪声注入" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=11;fontColor=#1E8449;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="185" width="460" height="18" as="geometry" />
+          <mxGeometry x="970" y="185" width="460" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-30" value="📌  隐私预算 ε 按数据敏感级别动态分配" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=11;fontColor=#1E8449;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="207" width="460" height="18" as="geometry" />
+          <mxGeometry x="970" y="207" width="460" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-31" value="📌  对抗成员推理攻击，严格满足 (ε, δ)-DP 数学定义" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=11;fontColor=#1E8449;" vertex="1" parent="1">
-          <mxGeometry x="1030" y="229" width="460" height="18" as="geometry" />
+          <mxGeometry x="970" y="229" width="460" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-32" value="🎯 工业核心数据全链路安全闭环" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=10;fontStyle=3;fontColor=#1E8449;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="254" width="470" height="18" as="geometry" />
+          <mxGeometry x="960" y="254" width="470" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-33" value="决策执行结果反馈 ↑" style="endArrow=block;endFill=1;html=1;              strokeColor=#6C3483;strokeWidth=5;              fontColor=#6C3483;fontSize=11;fontStyle=1;              align=right;verticalAlign=bottom;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="810" y="308" as="sourcePoint" />
-            <mxPoint x="810" y="332" as="targetPoint" />
+            <mxPoint x="750" y="308" as="sourcePoint" />
+            <mxPoint x="750" y="332" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-34" value="" style="rounded=10;whiteSpace=wrap;html=1;              fillColor=#F5EEF8;strokeColor=#6C3483;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="80" y="332" width="1440" height="238" as="geometry" />
+          <mxGeometry x="20" y="332" width="1440" height="238" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-35" value="中层 4.2　群体智能体决策拓扑与确定性执行" style="text;html=1;strokeColor=none;fillColor=none;align=left;              verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#6C3483;" vertex="1" parent="1">
-          <mxGeometry x="100" y="336" width="750" height="22" as="geometry" />
+          <mxGeometry x="40" y="336" width="750" height="22" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-36" value="共享隔离黑板&#xa;（Blackboard）" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#6C3483;              strokeColor=#4A235A;fontColor=#FFFFFF;fontSize=13;fontStyle=1;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="305" y="418" width="195" height="62" as="geometry" />
+          <mxGeometry x="245" y="418" width="195" height="62" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-37" value="① 全局规划者&#xa;Planner" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#D7BDE2;              strokeColor=#6C3483;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="108" y="370" width="148" height="54" as="geometry" />
+          <mxGeometry x="48" y="370" width="148" height="54" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-38" value="② API 执行者&#xa;Executor" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#FAE5D3;              strokeColor=#D35400;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="108" y="476" width="148" height="54" as="geometry" />
+          <mxGeometry x="48" y="476" width="148" height="54" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-39" value="③ 方案批评者&#xa;Critic" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#FEF9E7;              strokeColor=#D4AC0D;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="549" y="370" width="148" height="54" as="geometry" />
+          <mxGeometry x="489" y="370" width="148" height="54" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-40" value="④ 安全审计员&#xa;Security Auditor" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#D5F5E3;              strokeColor=#1E8449;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="549" y="476" width="148" height="54" as="geometry" />
+          <mxGeometry x="489" y="476" width="148" height="54" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-41" value="异步写入" style="endArrow=open;dashed=1;html=1;strokeColor=#6C3483;              fontSize=9;fontColor=#6C3483;align=center;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="256" y="397" as="sourcePoint" />
-            <mxPoint x="305" y="437" as="targetPoint" />
+            <mxPoint x="196" y="397" as="sourcePoint" />
+            <mxPoint x="245" y="437" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-42" value="任务读取" style="endArrow=open;dashed=1;html=1;strokeColor=#D35400;              fontSize=9;fontColor=#D35400;align=center;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="256" y="503" as="sourcePoint" />
-            <mxPoint x="305" y="466" as="targetPoint" />
+            <mxPoint x="196" y="503" as="sourcePoint" />
+            <mxPoint x="245" y="466" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-43" value="评估反馈" style="endArrow=open;dashed=1;html=1;strokeColor=#D4AC0D;              fontSize=9;fontColor=#D4AC0D;align=center;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="549" y="397" as="sourcePoint" />
-            <mxPoint x="500" y="437" as="targetPoint" />
+            <mxPoint x="489" y="397" as="sourcePoint" />
+            <mxPoint x="440" y="437" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-44" value="安全校验" style="endArrow=open;dashed=1;html=1;strokeColor=#1E8449;              fontSize=9;fontColor=#1E8449;align=center;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="549" y="503" as="sourcePoint" />
-            <mxPoint x="500" y="466" as="targetPoint" />
+            <mxPoint x="489" y="503" as="sourcePoint" />
+            <mxPoint x="440" y="466" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-45" value="" style="rounded=0;whiteSpace=wrap;html=1;              fillColor=#6C3483;strokeColor=none;opacity=25;" vertex="1" parent="1">
-          <mxGeometry x="738" y="350" width="2" height="205" as="geometry" />
+          <mxGeometry x="678" y="350" width="2" height="205" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-46" value="可靠 Function Call 强化机制" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=12;fontStyle=1;fontColor=#6C3483;" vertex="1" parent="1">
-          <mxGeometry x="750" y="342" width="752" height="20" as="geometry" />
+          <mxGeometry x="690" y="342" width="752" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-47" value="LLM&#xa;原始生成" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#D7BDE2;              strokeColor=#6C3483;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="762" y="408" width="128" height="62" as="geometry" />
+          <mxGeometry x="702" y="408" width="128" height="62" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-48" value="FSM 中间件&#xa;语法 · 逻辑 · 越权校验" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#A9DFBF;              strokeColor=#1E8449;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="960" y="408" width="190" height="62" as="geometry" />
+          <mxGeometry x="900" y="408" width="190" height="62" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-49" value="✅  安全执行 API" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#D5F5E3;              strokeColor=#1E8449;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1224" y="393" width="178" height="38" as="geometry" />
+          <mxGeometry x="1164" y="393" width="178" height="38" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-50" value="❌  阻断 · 反馈重试" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#FADBD8;              strokeColor=#E74C3C;fontSize=11;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1224" y="443" width="178" height="38" as="geometry" />
+          <mxGeometry x="1164" y="443" width="178" height="38" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-51" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#6C3483;strokeWidth=2;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="890" y="439" as="sourcePoint" />
-            <mxPoint x="960" y="439" as="targetPoint" />
+            <mxPoint x="830" y="439" as="sourcePoint" />
+            <mxPoint x="900" y="439" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-52" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#1E8449;strokeWidth=2;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1150" y="428" as="sourcePoint" />
-            <mxPoint x="1224" y="412" as="targetPoint" />
+            <mxPoint x="1090" y="428" as="sourcePoint" />
+            <mxPoint x="1164" y="412" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-53" value="" style="endArrow=block;endFill=1;html=1;strokeColor=#E74C3C;strokeWidth=2;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1150" y="452" as="sourcePoint" />
-            <mxPoint x="1224" y="462" as="targetPoint" />
+            <mxPoint x="1090" y="452" as="sourcePoint" />
+            <mxPoint x="1164" y="462" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-54" value="自适应纠错反馈回路 ↑" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=10;fontColor=#E74C3C;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="960" y="488" width="442" height="18" as="geometry" />
+          <mxGeometry x="900" y="488" width="442" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-55" value="目标：Function Call 一次通过率 ≥90% · 复杂任务重组响应时间 ≤5 min" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=11;fontStyle=3;fontColor=#6C3483;" vertex="1" parent="1">
-          <mxGeometry x="80" y="543" width="1440" height="20" as="geometry" />
+          <mxGeometry x="20" y="543" width="1440" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-56" value="协同推理能力支撑 ↑" style="endArrow=block;endFill=1;html=1;              strokeColor=#1A5276;strokeWidth=5;              fontColor=#1A5276;fontSize=11;fontStyle=1;              align=left;verticalAlign=bottom;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="790" y="570" as="sourcePoint" />
-            <mxPoint x="790" y="596" as="targetPoint" />
+            <mxPoint x="730" y="570" as="sourcePoint" />
+            <mxPoint x="730" y="596" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-57" value="" style="rounded=10;whiteSpace=wrap;html=1;              fillColor=#EBF5FB;strokeColor=#1A5276;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="80" y="596" width="1440" height="222" as="geometry" />
+          <mxGeometry x="20" y="596" width="1440" height="222" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-58" value="底层 4.1　意图驱动的分布式协同推理机制" style="text;html=1;strokeColor=none;fillColor=none;align=left;              verticalAlign=middle;fontSize=13;fontStyle=1;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="100" y="600" width="750" height="22" as="geometry" />
+          <mxGeometry x="40" y="600" width="750" height="22" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-59" value="" style="rounded=10;whiteSpace=wrap;html=1;              fillColor=#D6EAF8;strokeColor=#1A5276;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="628" width="430" height="172" as="geometry" />
+          <mxGeometry x="40" y="628" width="430" height="172" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-60" value="🧠  意图感知调度 &amp; KV Cache 全局复用" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=12;fontStyle=1;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="110" y="633" width="410" height="20" as="geometry" />
+          <mxGeometry x="50" y="633" width="410" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-61" value="•  轻量级语义编码器（DistilBERT）快速映射意图特征向量" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="114" y="660" width="406" height="18" as="geometry" />
+          <mxGeometry x="54" y="660" width="406" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-62" value="•  HSIC / 动态余弦相似度精确度量并发请求意图相关性" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="114" y="680" width="406" height="18" as="geometry" />
+          <mxGeometry x="54" y="680" width="406" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-63" value="•  跨异构节点 KV Cache 共享复用，消除预填充冗余计算" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="114" y="700" width="406" height="18" as="geometry" />
+          <mxGeometry x="54" y="700" width="406" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-64" value="•  内存池化全局替换机制，显著提升边缘侧推理吞吐量" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="114" y="720" width="406" height="18" as="geometry" />
+          <mxGeometry x="54" y="720" width="406" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-65" value="语义编码器  ·  HSIC相似度  ·  跨节点缓存共享" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#1A5276;              strokeColor=none;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="114" y="746" width="406" height="22" as="geometry" />
+          <mxGeometry x="54" y="746" width="406" height="22" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-66" value="" style="rounded=10;whiteSpace=wrap;html=1;              fillColor=#D6EAF8;strokeColor=#1A5276;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="555" y="628" width="430" height="172" as="geometry" />
+          <mxGeometry x="495" y="628" width="430" height="172" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-67" value="⚙️  基于 DAG 的循环流水线并行（RPP）" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=12;fontStyle=1;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="565" y="633" width="410" height="20" as="geometry" />
+          <mxGeometry x="505" y="633" width="410" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-68" value="•  神经网络结构抽象为加权有向无环图（DAG）进行切分" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="568" y="660" width="408" height="18" as="geometry" />
+          <mxGeometry x="508" y="660" width="408" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-69" value="•  微批次（Micro-batch）交错调度消除跨设备通信气泡" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="568" y="680" width="408" height="18" as="geometry" />
+          <mxGeometry x="508" y="680" width="408" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-70" value="•  D2D 无线链路激活传输与本地矩阵运算高效重叠" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="568" y="700" width="408" height="18" as="geometry" />
+          <mxGeometry x="508" y="700" width="408" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-71" value="•  异构算力感知负载均衡，规避木桶效应性能瓶颈" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="568" y="720" width="408" height="18" as="geometry" />
+          <mxGeometry x="508" y="720" width="408" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-72" value="计算图细粒度切分  ·  微批次交错调度  ·  通信计算深度重叠" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#1A5276;              strokeColor=none;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="568" y="746" width="408" height="22" as="geometry" />
+          <mxGeometry x="508" y="746" width="408" height="22" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-73" value="" style="rounded=10;whiteSpace=wrap;html=1;              fillColor=#D6EAF8;strokeColor=#1A5276;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="1010" y="628" width="490" height="172" as="geometry" />
+          <mxGeometry x="950" y="628" width="490" height="172" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-74" value="🔀  大小模型混合推理 · 智能动态路由" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=12;fontStyle=1;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="1020" y="633" width="470" height="20" as="geometry" />
+          <mxGeometry x="960" y="633" width="470" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-75" value="•  智能 Router 按任务复杂度将请求分流至不同推理路径" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="1024" y="660" width="466" height="18" as="geometry" />
+          <mxGeometry x="964" y="660" width="466" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-76" value="•  低复杂度任务 → 端侧 SLM（1B~3B）本地闭环处理" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="1024" y="680" width="466" height="18" as="geometry" />
+          <mxGeometry x="964" y="680" width="466" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-77" value="•  高复杂度任务 → 级联卸载至边/云大模型（&gt;10B）" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="1024" y="700" width="466" height="18" as="geometry" />
+          <mxGeometry x="964" y="700" width="466" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-78" value="•  LLM-SLM Hybrid 兼顾低时延与复杂任务高精度需求" style="text;html=1;strokeColor=none;fillColor=none;align=left;              fontSize=10;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="1024" y="720" width="466" height="18" as="geometry" />
+          <mxGeometry x="964" y="720" width="466" height="18" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-79" value="LLM-SLM Hybrid  ·  级联卸载推理  ·  任务复杂度自适应路由" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#1A5276;              strokeColor=none;fontColor=#FFFFFF;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="1024" y="746" width="466" height="22" as="geometry" />
+          <mxGeometry x="964" y="746" width="466" height="22" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-80" value="目标：算力有效利用率提升 ≥30% · 端到端推理时延压缩 ≥40% · 模型精度损失 ≤5%" style="text;html=1;strokeColor=none;fillColor=none;align=center;              fontSize=11;fontStyle=3;fontColor=#1A5276;" vertex="1" parent="1">
-          <mxGeometry x="80" y="806" width="1440" height="20" as="geometry" />
+          <mxGeometry x="20" y="806" width="1440" height="20" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-81" value="🏭  智能柔性制造" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1A5276;              strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="834" width="288" height="40" as="geometry" />
+          <mxGeometry x="20" y="834" width="288" height="40" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-82" value="🔧  复杂工业运维" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#6C3483;              strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="368" y="834" width="288" height="40" as="geometry" />
+          <mxGeometry x="308" y="834" width="288" height="40" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-83" value="⚡  智能电网" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D35400;              strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="656" y="834" width="288" height="40" as="geometry" />
+          <mxGeometry x="596" y="834" width="288" height="40" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-84" value="🚁  低空无人自主系统" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E8449;              strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="944" y="834" width="288" height="40" as="geometry" />
+          <mxGeometry x="884" y="834" width="288" height="40" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-85" value="🌐  6G 边缘原生智能" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#117A65;              strokeColor=none;fontColor=#FFFFFF;fontSize=12;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1232" y="834" width="288" height="40" as="geometry" />
+          <mxGeometry x="1172" y="834" width="288" height="40" as="geometry" />
         </mxCell>
         <mxCell id="0RplUrGnFsplLeNN9teG-86" value="中兴通讯产学研合作项目 · 2026ZTEXX · 超边缘分布式算力研究" style="rounded=4;whiteSpace=wrap;html=1;fillColor=none;              strokeColor=#BBBBBB;fontSize=9;fontColor=#AAAAAA;" vertex="1" parent="1">
-          <mxGeometry x="1148" y="884" width="372" height="26" as="geometry" />
+          <mxGeometry x="1088" y="884" width="372" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
