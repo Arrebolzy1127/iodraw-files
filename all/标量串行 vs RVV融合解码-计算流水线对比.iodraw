@@ -1,0 +1,316 @@
+<mxfile host="app.diagrams.net" agent="draw.io" version="24.0.0">
+  <diagram name="图4-标量vsRVV流水线对比" id="fig4">
+    <mxGraphModel dx="1500" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="950" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ============ 标题 ============ -->
+        <mxCell id="title_top" value="&lt;b&gt;(a) 标量串行实现：解码开销占38.5%&lt;/b&gt;" style="text;html=1;align=center;fontSize=14;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="700" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="title_bottom" value="&lt;b&gt;(b) RVV融合流水线：解码-计算并行，2.41×加速&lt;/b&gt;" style="text;html=1;align=center;fontSize=14;fontColor=#007F00;" vertex="1" parent="1">
+          <mxGeometry x="30" y="460" width="700" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- ================================================================ -->
+        <!-- (a) 标量串行流水线 -->
+        <!-- ================================================================ -->
+
+        <!-- 内存中的打包权重 -->
+        <mxCell id="a_mem" value="&lt;b&gt;内存&lt;/b&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;INT4 打包权重&lt;br&gt;[w₁w₂|w₃w₄|...]&lt;br&gt;每字节含2个权重&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="30" y="70" width="130" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- 步骤1: 标量加载 -->
+        <mxCell id="a_s1" value="&lt;b&gt;① 标量加载&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;逐字节读取&lt;br&gt;lb rd, 0(rs1)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="70" width="120" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- 步骤2: 标量掩码+移位 -->
+        <mxCell id="a_s2" value="&lt;b&gt;② 逐元素解包&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;lo = byte &amp; 0x0F&lt;br&gt;hi = byte &gt;&gt; 4&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;串行执行×N次&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="360" y="70" width="130" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- 步骤3: 标量反量化 -->
+        <mxCell id="a_s3" value="&lt;b&gt;③ 逐元素反量化&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;w_fp = s × int4 + m&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;逐个转换×N次&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="530" y="70" width="130" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- 步骤4: 标量乘加 -->
+        <mxCell id="a_s4" value="&lt;b&gt;④ 标量乘累加&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;acc += w × x&lt;br&gt;&lt;font color=&quot;#CC0000&quot;&gt;fmul + fadd ×N次&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="700" y="70" width="130" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- 输出 -->
+        <mxCell id="a_out" value="&lt;b&gt;y[i]&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="870" y="85" width="60" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- 串行连接箭头 -->
+        <mxCell id="a_e1" style="strokeWidth=2;strokeColor=#333;" edge="1" source="a_mem" target="a_s1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a_e2" style="strokeWidth=2;strokeColor=#333;" edge="1" source="a_s1" target="a_s2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a_e3" style="strokeWidth=2;strokeColor=#333;" edge="1" source="a_s2" target="a_s3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a_e4" style="strokeWidth=2;strokeColor=#333;" edge="1" source="a_s3" target="a_s4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a_e5" style="strokeWidth=2;strokeColor=#333;" edge="1" source="a_s4" target="a_out" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- 时间轴标注(a) -->
+        <mxCell id="a_timeline" value="" style="shape=line;strokeColor=#CC0000;strokeWidth=2;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="190" width="900" height="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_t_label" value="&lt;b&gt;时间 →&lt;/b&gt;" style="text;html=1;align=right;fontSize=11;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="850" y="195" width="80" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- 解码占比标注 -->
+        <mxCell id="a_decode_bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="460" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_decode_label" value="&lt;font color=&quot;#CC0000&quot;&gt;&lt;b&gt;解码开销 38.5%&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="300" y="202" width="200" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_compute_bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;" vertex="1" parent="1">
+          <mxGeometry x="660" y="200" width="170" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="a_compute_label" value="&lt;b&gt;计算&lt;/b&gt;" style="text;html=1;align=center;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="700" y="202" width="80" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- 每元素循环标注 -->
+        <mxCell id="a_loop" value="&lt;font color=&quot;#CC0000&quot;&gt;⟲ 逐元素串行循环 N 次 (N=隐藏维度)&lt;/font&gt;" style="text;html=1;align=center;fontSize=11;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="200" y="165" width="630" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- ================ 分隔线 ================ -->
+        <mxCell id="separator" value="" style="shape=line;strokeColor=#999;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="440" width="1520" height="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="vs_label" value="&lt;font size=&quot;4&quot; color=&quot;#666&quot;&gt;⬇ 本文方案 ⬇&lt;/font&gt;" style="text;html=1;align=center;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="650" y="420" width="200" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- ================================================================ -->
+        <!-- (b) RVV融合流水线 -->
+        <!-- ================================================================ -->
+
+        <!-- 内存中的打包权重 -->
+        <mxCell id="b_mem" value="&lt;b&gt;内存&lt;/b&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;INT4 打包权重&lt;br&gt;[w₁w₂|w₃w₄|...]&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="30" y="520" width="130" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- RVV向量寄存器组(大背景) -->
+        <mxCell id="b_vreg_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#4CAF50;strokeWidth=2;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="495" width="920" height="380" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_vreg_title" value="&lt;b&gt;RVV 向量寄存器内融合流水线&lt;/b&gt;（VLEN=256, 单指令处理64个INT4元素）" style="text;html=1;align=center;fontSize=13;fontColor=#2E7D32;" vertex="1" parent="1">
+          <mxGeometry x="280" y="500" width="600" height="22" as="geometry"/>
+        </mxCell>
+
+        <!-- 步骤0: vsetvli -->
+        <mxCell id="b_s0" value="&lt;b&gt;⓪ vsetvli&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;动态配置&lt;br&gt;vl = min(n, VLMAX)&lt;br&gt;LMUL=m4, e16&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="220" y="535" width="140" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- 步骤1: 向量批量加载 -->
+        <mxCell id="b_s1" value="&lt;b&gt;① vle8.v 批量加载&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;一条指令加载&lt;br&gt;32字节 = 64个INT4&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="400" y="535" width="150" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- 向量寄存器可视化 -->
+        <mxCell id="b_vreg_vis" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="625" width="880" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_vreg_label" value="&lt;b&gt;向量寄存器 v8 (VLEN=256 bit)&lt;/b&gt;" style="text;html=1;align=left;fontSize=10;fontColor=#1976D2;" vertex="1" parent="1">
+          <mxGeometry x="225" y="627" width="220" height="16" as="geometry"/>
+        </mxCell>
+        <!-- 寄存器内的元素格子 -->
+        <mxCell id="vreg_cell1" value="&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;w₁w₂&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="225" y="647" width="45" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="vreg_cell2" value="&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;w₃w₄&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="270" y="647" width="45" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="vreg_cell3" value="&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;w₅w₆&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="315" y="647" width="45" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="vreg_dots" value="&lt;b&gt;· · ·&lt;/b&gt;" style="text;html=1;align=center;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="370" y="647" width="40" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="vreg_cell_last" value="&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;w₆₃w₆₄&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#BBDEFB;strokeColor=#1976D2;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="420" y="647" width="55" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- 步骤2: 并行解包(双路) -->
+        <mxCell id="b_s2_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="220" y="700" width="310" height="155" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_s2_title" value="&lt;b&gt;② 寄存器内并行解包&lt;/b&gt;（单指令，64元素同时）" style="text;html=1;align=center;fontSize=11;fontColor=#E65100;" vertex="1" parent="1">
+          <mxGeometry x="225" y="705" width="300" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- 低4位路径 -->
+        <mxCell id="b_lo" value="&lt;b&gt;低4位路径&lt;/b&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;vw_lo = vand.vi(vw, 0x0F)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#E65100;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="235" y="730" width="135" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- 高4位路径 -->
+        <mxCell id="b_hi" value="&lt;b&gt;高4位路径&lt;/b&gt;&lt;br&gt;&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;vw_hi = vsrl.vi(vw, 4)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#E65100;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="730" width="135" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- 类型转换 -->
+        <mxCell id="b_widen_lo" value="&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;vwcvt (INT4→INT16)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#E65100;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="235" y="790" width="135" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_widen_hi" value="&lt;font face=&quot;Courier New&quot; size=&quot;1&quot;&gt;vwcvt (INT4→INT16)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE0B2;strokeColor=#E65100;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="790" width="135" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 解包内部连线 -->
+        <mxCell id="b_e_lo1" style="strokeWidth=1;strokeColor=#E65100;" edge="1" source="b_lo" target="b_widen_lo" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="b_e_hi1" style="strokeWidth=1;strokeColor=#E65100;" edge="1" source="b_hi" target="b_widen_hi" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- 反量化标注 -->
+        <mxCell id="b_s2_dq" value="&lt;font size=&quot;1&quot;&gt;反量化: &lt;b&gt;vfmacc(m, s, vw)&lt;/b&gt;&lt;br&gt;w_fp16 = s ⊙ int + m&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#E65100;dashed=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="235" y="830" width="280" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- 步骤3: 融合乘加 -->
+        <mxCell id="b_s3_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E9;strokeColor=#2E7D32;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="560" y="700" width="250" height="155" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_s3_title" value="&lt;b&gt;③ 向量融合乘加&lt;/b&gt;" style="text;html=1;align=center;fontSize=11;fontColor=#2E7D32;" vertex="1" parent="1">
+          <mxGeometry x="600" y="705" width="180" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- 输入向量x -->
+        <mxCell id="b_x" value="&lt;b&gt;vle16.v&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;加载输入 x[j]&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="580" y="730" width="100" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- vfmacc -->
+        <mxCell id="b_fmacc" value="&lt;b&gt;vfmacc.vv&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;acc += w_fp16 × x&lt;br&gt;&lt;font color=&quot;#007F00&quot;&gt;乘法+累加融合为&lt;br&gt;单一指令!&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;strokeWidth=2;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="695" y="730" width="100" height="70" as="geometry"/>
+        </mxCell>
+
+        <!-- 累加器 -->
+        <mxCell id="b_acc" value="&lt;b&gt;acc&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;(向量累加器)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#2E7D32;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="695" y="815" width="100" height="35" as="geometry"/>
+        </mxCell>
+
+        <!-- fmacc内部连线 -->
+        <mxCell id="b_e_x" style="strokeWidth=1.5;strokeColor=#2E7D32;" edge="1" source="b_x" target="b_fmacc" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="b_e_fmacc_acc" style="strokeWidth=1.5;strokeColor=#2E7D32;" edge="1" source="b_fmacc" target="b_acc" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- 解包→乘加 连线 -->
+        <mxCell id="b_e_dq_fmacc" value="&lt;font color=&quot;#E65100&quot;&gt;w_fp16&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#E65100;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" source="b_s2_bg" target="b_fmacc" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- 步骤4: 向量归约 -->
+        <mxCell id="b_s4" value="&lt;b&gt;④ vfredusum&lt;/b&gt;&lt;br&gt;&lt;font size=&quot;1&quot;&gt;向量寄存器内&lt;br&gt;高效归约求和&lt;br&gt;&lt;font color=&quot;#007F00&quot;&gt;无需写回内存&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2DFDB;strokeColor=#00695C;strokeWidth=2;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="850" y="710" width="130" height="75" as="geometry"/>
+        </mxCell>
+
+        <!-- 输出 -->
+        <mxCell id="b_out" value="&lt;b&gt;y[i]&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="725" width="70" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- 归约连线 -->
+        <mxCell id="b_e_acc_red" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#00695C;" edge="1" source="b_acc" target="b_s4" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_e_red_out" style="strokeWidth=2;strokeColor=#333;" edge="1" source="b_s4" target="b_out" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- 外部连线: 内存→vsetvli→加载 -->
+        <mxCell id="b_e0" style="strokeWidth=2;strokeColor=#333;" edge="1" source="b_mem" target="b_s0" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="b_e1" style="strokeWidth=2;strokeColor=#333;" edge="1" source="b_s0" target="b_s1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="b_e_load_vreg" value="&lt;font color=&quot;#1976D2&quot;&gt;&lt;b&gt;批量加载&lt;/b&gt;&lt;/font&gt;" style="strokeWidth=2;strokeColor=#1976D2;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" source="b_s1" target="b_vreg_vis" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="b_e_vreg_unpack" style="strokeWidth=2;strokeColor=#E65100;" edge="1" source="b_vreg_vis" target="b_s2_bg" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <!-- ============ VLA循环标注 ============ -->
+        <mxCell id="b_vla_loop" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#2E7D32;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="615" width="870" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="b_vla_label" value="&lt;font color=&quot;#2E7D32&quot;&gt;⟲ VLA自适应循环: ⌈N/vl⌉ 次迭代（N=隐藏维度, vl=VLMAX）&lt;/font&gt;" style="text;html=1;align=center;fontSize=11;fontStyle=3;" vertex="1" parent="1">
+          <mxGeometry x="350" y="870" width="500" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- ============ 右侧对比标注 ============ -->
+        <mxCell id="compare_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;strokeWidth=2;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="70" width="420" height="330" as="geometry"/>
+        </mxCell>
+        <mxCell id="compare_title" value="&lt;b&gt;关键对比&lt;/b&gt;" style="text;html=1;align=center;fontSize=13;fontColor=#333;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="80" width="100" height="22" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cmp1_h" value="&lt;b&gt;指标&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#999;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="115" width="100" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="cmp2_h" value="&lt;b&gt;标量&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="115" width="140" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="cmp3_h" value="&lt;b&gt;RVV融合&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="115" width="140" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- 行1: 解包方式 -->
+        <mxCell id="r1c1" value="解包方式" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="145" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1c2" value="逐字节串行&lt;br&gt;mask+shift ×N" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="145" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="r1c3" value="&lt;b&gt;vand+vsrl&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#007F00&quot;&gt;64元素/指令&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="145" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 行2: 乘加方式 -->
+        <mxCell id="r2c1" value="乘累加" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="185" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2c2" value="fmul + fadd&lt;br&gt;2条指令/元素" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="185" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="r2c3" value="&lt;b&gt;vfmacc&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#007F00&quot;&gt;1条指令/vl元素&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="185" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 行3: 归约方式 -->
+        <mxCell id="r3c1" value="归约求和" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="225" width="100" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="r3c2" value="标量逐个加&lt;br&gt;写回内存" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="225" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="r3c3" value="&lt;b&gt;vfredusum&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#007F00&quot;&gt;寄存器内归约&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#999;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="225" width="140" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- 行4: 吞吐量 -->
+        <mxCell id="r4c1" value="&lt;b&gt;吞吐量&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#999;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="275" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="r4c2" value="&lt;b&gt;&lt;font color=&quot;#CC0000&quot;&gt;3.4 tok/s&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="275" width="140" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="r4c3" value="&lt;b&gt;&lt;font color=&quot;#007F00&quot;&gt;8.2 tok/s (2.41×)&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="275" width="140" height="35" as="geometry"/>
+        </mxCell>
+
+        <!-- 行5: 解码占比 -->
+        <mxCell id="r5c1" value="&lt;b&gt;解码占比&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#999;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1135" y="310" width="100" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="r5c2" value="&lt;b&gt;&lt;font color=&quot;#CC0000&quot;&gt;38.5%&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="310" width="140" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="r5c3" value="&lt;b&gt;&lt;font color=&quot;#007F00&quot;&gt;~8% (融合隐藏)&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C8E6C9;strokeColor=#4CAF50;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="310" width="140" height="35" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
