@@ -1,0 +1,596 @@
+<mxfile host="app.diagrams.net" modified="2025-01-01T00:00:00.000Z" agent="draw" version="24.0.0" type="device">
+  <diagram id="lcps-timing" name="Fig4-L-CPS-Timing">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ==================== 标题 ==================== -->
+        <mxCell id="title" value="&lt;b&gt;Fig. 4  L-CPS Timing Diagram (Prefill + Decode)&lt;/b&gt;" style="text;html=1;fontSize=16;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="400" y="10" width="600" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== 时间轴 ==================== -->
+        <mxCell id="timeaxis" value="" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#333333;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="520" as="sourcePoint"/>
+            <mxPoint x="1450" y="520" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="timeaxislabel" value="&lt;b&gt;Time (t) →&lt;/b&gt;" style="text;html=1;fontSize=12;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1455" y="510" width="80" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== Track 标签 ==================== -->
+        <mxCell id="track1label" value="&lt;b&gt;Track 1&lt;/b&gt;&lt;br&gt;Hard RT&lt;br&gt;Arrivals" style="text;html=1;fontSize=10;align=right;verticalAlign=middle;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="10" y="60" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="track2label" value="&lt;b&gt;Track 2&lt;/b&gt;&lt;br&gt;Token-Level&lt;br&gt;(Baseline)" style="text;html=1;fontSize=10;align=right;verticalAlign=middle;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="10" y="160" width="80" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="track3label" value="&lt;b&gt;Track 3&lt;/b&gt;&lt;br&gt;L-CPS&lt;br&gt;(Ours)" style="text;html=1;fontSize=10;align=right;verticalAlign=middle;fontColor=#006600;" vertex="1" parent="1">
+          <mxGeometry x="10" y="320" width="80" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== Track 1 水平线 ==================== -->
+        <mxCell id="t1line" value="" style="endArrow=none;strokeWidth=1;strokeColor=#CC0000;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="85" as="sourcePoint"/>
+            <mxPoint x="1400" y="85" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Track 1: 硬实时到达箭头 (每隔约100ms) -->
+        <mxCell id="rt1" value="" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#CC0000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="65" as="sourcePoint"/>
+            <mxPoint x="200" y="105" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rt1lbl" value="τ_H" style="text;html=1;fontSize=9;fontColor=#CC0000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="185" y="48" width="30" height="18" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rt2" value="" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#CC0000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="65" as="sourcePoint"/>
+            <mxPoint x="430" y="105" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rt2lbl" value="τ_H" style="text;html=1;fontSize=9;fontColor=#CC0000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="415" y="48" width="30" height="18" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rt3" value="" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#CC0000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="65" as="sourcePoint"/>
+            <mxPoint x="660" y="105" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rt3lbl" value="τ_H" style="text;html=1;fontSize=9;fontColor=#CC0000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="645" y="48" width="30" height="18" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rt4" value="" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#CC0000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="890" y="65" as="sourcePoint"/>
+            <mxPoint x="890" y="105" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rt4lbl" value="τ_H" style="text;html=1;fontSize=9;fontColor=#CC0000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="875" y="48" width="30" height="18" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="rt5" value="" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#CC0000;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="65" as="sourcePoint"/>
+            <mxPoint x="1120" y="105" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rt5lbl" value="τ_H" style="text;html=1;fontSize=9;fontColor=#CC0000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1105" y="48" width="30" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- T=100ms 标注 -->
+        <mxCell id="Tperiod" value="" style="endArrow=block;endFill=1;startArrow=block;startFill=1;strokeColor=#CC0000;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="115" as="sourcePoint"/>
+            <mxPoint x="430" y="115" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tperiodlbl" value="T = 100 ms" style="text;html=1;fontSize=9;fontColor=#CC0000;align=center;" vertex="1" parent="1">
+          <mxGeometry x="270" y="117" width="80" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== Track 2: Token-Level (Baseline) ==================== -->
+        <!-- 分隔线 -->
+        <mxCell id="sep12" value="" style="endArrow=none;strokeWidth=0.5;strokeColor=#CCCCCC;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="140" as="sourcePoint"/>
+            <mxPoint x="1400" y="140" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Prefill 大块 (约1100ms 映射到 ~506px) -->
+        <mxCell id="t2_prefill" value="&lt;b&gt;Prefill&lt;/b&gt;&lt;br&gt;~1100 ms&lt;br&gt;(Non-preemptible)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE0E0;strokeColor=#CC0000;fontSize=10;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="155" width="506" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- Decode Token k -->
+        <mxCell id="t2_tok1" value="&lt;b&gt;Token k&lt;/b&gt;&lt;br&gt;122 ms" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9E2F3;strokeColor=#4472C4;fontSize=9;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="610" y="155" width="56" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- Decode Token k+1 -->
+        <mxCell id="t2_tok2" value="&lt;b&gt;Token k+1&lt;/b&gt;&lt;br&gt;122 ms" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9E2F3;strokeColor=#4472C4;fontSize=9;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="670" y="155" width="56" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- Decode Token k+2 -->
+        <mxCell id="t2_tok3" value="&lt;b&gt;Token k+2&lt;/b&gt;&lt;br&gt;122 ms" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D9E2F3;strokeColor=#4472C4;fontSize=9;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="730" y="155" width="56" height="55" as="geometry"/>
+        </mxCell>
+
+        <!-- 省略号 -->
+        <mxCell id="t2_dots" value="···" style="text;html=1;fontSize=16;align=center;verticalAlign=middle;fontColor=#4472C4;" vertex="1" parent="1">
+          <mxGeometry x="790" y="165" width="30" height="30" as="geometry"/>
+        </mxCell>
+
+        <!-- Track 2 阻塞标注：硬实时到达在 prefill 期间 -->
+        <mxCell id="t2_block_pf" value="" style="rounded=0;whiteSpace=wrap;fillColor=#FF000033;strokeColor=none;opacity=30;" vertex="1" parent="1">
+          <mxGeometry x="200" y="155" width="406" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="t2_block_pf_arr" value="" style="endArrow=block;endFill=1;startArrow=block;startFill=1;strokeColor=#CC0000;strokeWidth=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="225" as="sourcePoint"/>
+            <mxPoint x="606" y="225" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2_block_pf_lbl" value="&lt;font color=&quot;#CC0000&quot;&gt;&lt;b&gt;Blocking ≈ 900 ms ❌ ≫ 100 ms&lt;/b&gt;&lt;/font&gt;" style="text;html=1;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="228" width="220" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Track 2 阻塞标注：硬实时到达在 decode token 期间 -->
+        <mxCell id="t2_block_dec_arr" value="" style="endArrow=block;endFill=1;startArrow=block;startFill=1;strokeColor=#CC0000;strokeWidth=1;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="225" as="sourcePoint"/>
+            <mxPoint x="726" y="225" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t2_block_dec_lbl" value="&lt;font color=&quot;#CC0000&quot;&gt;Blocking ≤ 122 ms ❌&lt;/font&gt;" style="text;html=1;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="630" y="228" width="140" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== Track 3: L-CPS (Ours) ==================== -->
+        <!-- 分隔线 -->
+        <mxCell id="sep23" value="" style="endArrow=none;strokeWidth=0.5;strokeColor=#CCCCCC;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="270" as="sourcePoint"/>
+            <mxPoint x="1400" y="270" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- ==== Prefill Phase: Chunked (8 chunks × 28 layers) ==== -->
+        <mxCell id="t3_pf_label" value="&lt;font color=&quot;#006600&quot;&gt;&lt;b&gt;Chunked Prefill Phase&lt;/b&gt; (C_pf=4, 8 chunks)&lt;/font&gt;" style="text;html=1;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="100" y="275" width="280" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Chunk 0 (展示为一组细小的层块) -->
+        <mxCell id="pf_chunk0_bg" value="" style="rounded=1;whiteSpace=wrap;fillColor=#E2EFDA;strokeColor=#548235;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="296" width="126" height="45" as="geometry"/>
+        </mxCell>
+        <!-- 模拟28个层块（画7个代表，实际每4个像素一个） -->
+        <mxCell id="pf_c0_l1" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="102" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c0_l2" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="107" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c0_l3" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="112" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c0_l4" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="117" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c0_dots" value="···" style="text;html=1;fontSize=8;align=center;verticalAlign=middle;fontColor=#548235;" vertex="1" parent="1">
+          <mxGeometry x="122" y="305" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c0_l26" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="206" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c0_l27" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="211" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c0_l28" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="216" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c0lbl" value="Chunk 0&lt;br&gt;(28 layers)" style="text;html=1;fontSize=8;align=center;verticalAlign=top;fontColor=#548235;" vertex="1" parent="1">
+          <mxGeometry x="120" y="342" width="80" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- Chunk 1 -->
+        <mxCell id="pf_chunk1_bg" value="" style="rounded=1;whiteSpace=wrap;fillColor=#E2EFDA;strokeColor=#548235;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="296" width="126" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c1_l1" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="232" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c1_l2" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="237" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c1_dots" value="···" style="text;html=1;fontSize=8;align=center;verticalAlign=middle;fontColor=#548235;" vertex="1" parent="1">
+          <mxGeometry x="250" y="305" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c1_l28" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="346" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c1lbl" value="Chunk 1" style="text;html=1;fontSize=8;align=center;fontColor=#548235;" vertex="1" parent="1">
+          <mxGeometry x="260" y="342" width="60" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- 省略号（chunks 2-6） -->
+        <mxCell id="pf_cdots" value="· · · · ·" style="text;html=1;fontSize=12;align=center;verticalAlign=middle;fontColor=#548235;" vertex="1" parent="1">
+          <mxGeometry x="365" y="305" width="50" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- Chunk 7 (最后一个) -->
+        <mxCell id="pf_chunk7_bg" value="" style="rounded=1;whiteSpace=wrap;fillColor=#E2EFDA;strokeColor=#548235;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="296" width="126" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c7_l1" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="422" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c7_dots" value="···" style="text;html=1;fontSize=8;align=center;verticalAlign=middle;fontColor=#548235;" vertex="1" parent="1">
+          <mxGeometry x="440" y="305" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c7_l28" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="536" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_c7lbl" value="Chunk 7" style="text;html=1;fontSize=8;align=center;fontColor=#548235;" vertex="1" parent="1">
+          <mxGeometry x="452" y="342" width="60" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- Yield 点标注 (在 chunk 边界) -->
+        <mxCell id="yield_pf1" value="▼" style="text;html=1;fontSize=10;align=center;fontColor=#FF6600;" vertex="1" parent="1">
+          <mxGeometry x="220" y="283" width="16" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="yield_pf2" value="▼" style="text;html=1;fontSize=10;align=center;fontColor=#FF6600;" vertex="1" parent="1">
+          <mxGeometry x="350" y="283" width="16" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="yield_pf3" value="▼" style="text;html=1;fontSize=10;align=center;fontColor=#FF6600;" vertex="1" parent="1">
+          <mxGeometry x="540" y="283" width="16" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="yield_legend_pf" value="&lt;font color=&quot;#FF6600&quot;&gt;▼ = Yield Check&lt;/font&gt;" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="555" y="283" width="100" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- Prefill 阶段硬实时到达 → Yield 让出 -->
+        <mxCell id="pf_rt_arrive" value="" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#CC0000;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="110" as="sourcePoint"/>
+            <mxPoint x="200" y="293" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 硬实时任务执行块 (在 yield 处) -->
+        <mxCell id="pf_rt_exec" value="&lt;font color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;τ_H&lt;/b&gt;&lt;/font&gt;" style="rounded=0;fillColor=#CC0000;strokeColor=#990000;fontColor=#FFFFFF;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="222" y="296" width="8" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="pf_rt_bmax" value="&lt;font color=&quot;#006600&quot;&gt;&lt;b&gt;B_max ≤ 5.91 ms ✓&lt;/b&gt;&lt;/font&gt;" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="145" y="367" width="130" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- ==== Decode Phase ==== -->
+        <mxCell id="t3_dec_label" value="&lt;font color=&quot;#003399&quot;&gt;&lt;b&gt;Decode Phase&lt;/b&gt; (28 layers/token)&lt;/font&gt;" style="text;html=1;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="570" y="275" width="220" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- 阶段分隔虚线 -->
+        <mxCell id="phase_sep" value="" style="endArrow=none;strokeWidth=1;strokeColor=#999999;dashed=1;dashPattern=5 3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="558" y="275" as="sourcePoint"/>
+            <mxPoint x="558" y="500" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="phase_sep_lbl" value="&lt;font color=&quot;#999999&quot;&gt;Prefill → Decode&lt;/font&gt;" style="text;html=1;fontSize=8;align=center;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="520" y="430" width="90" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- Decode Token k (28 层块) -->
+        <mxCell id="dec_tok0_bg" value="" style="rounded=1;whiteSpace=wrap;fillColor=#D6E4F0;strokeColor=#4472C4;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="296" width="140" height="45" as="geometry"/>
+        </mxCell>
+        <!-- 代表性层块 -->
+        <mxCell id="dec_t0_l1" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="572" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t0_l2" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="577" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t0_l3" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="582" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t0_l4" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="587" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t0_dots" value="···" style="text;html=1;fontSize=8;align=center;verticalAlign=middle;fontColor=#4472C4;" vertex="1" parent="1">
+          <mxGeometry x="600" y="305" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t0_l27" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="694" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t0_l28" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="700" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t0lbl" value="Token k (28 layers, 122 ms)" style="text;html=1;fontSize=8;align=center;fontColor=#4472C4;" vertex="1" parent="1">
+          <mxGeometry x="580" y="342" width="140" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- Yield 标记 (decode 层边界) -->
+        <mxCell id="yield_d1" value="▼" style="text;html=1;fontSize=8;align=center;fontColor=#FF6600;" vertex="1" parent="1">
+          <mxGeometry x="584" y="286" width="10" height="12" as="geometry"/>
+        </mxCell>
+        <mxCell id="yield_d2" value="▼" style="text;html=1;fontSize=8;align=center;fontColor=#FF6600;" vertex="1" parent="1">
+          <mxGeometry x="589" y="286" width="10" height="12" as="geometry"/>
+        </mxCell>
+
+        <!-- Decode Token k+1 -->
+        <mxCell id="dec_tok1_bg" value="" style="rounded=1;whiteSpace=wrap;fillColor=#D6E4F0;strokeColor=#4472C4;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="296" width="140" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t1_l1" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="722" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t1_l2" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="727" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t1_dots" value="···" style="text;html=1;fontSize=8;align=center;verticalAlign=middle;fontColor=#4472C4;" vertex="1" parent="1">
+          <mxGeometry x="745" y="305" width="20" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t1_l28" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;strokeWidth=0.5;" vertex="1" parent="1">
+          <mxGeometry x="850" y="298" width="4" height="41" as="geometry"/>
+        </mxCell>
+        <mxCell id="dec_t1lbl" value="Token k+1" style="text;html=1;fontSize=8;align=center;fontColor=#4472C4;" vertex="1" parent="1">
+          <mxGeometry x="755" y="342" width="60" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- Decode 更多 tokens 省略 -->
+        <mxCell id="dec_moredots" value="···" style="text;html=1;fontSize=16;align=center;verticalAlign=middle;fontColor=#4472C4;" vertex="1" parent="1">
+          <mxGeometry x="870" y="305" width="30" height="25" as="geometry"/>
+        </mxCell>
+
+        <!-- Decode 阶段硬实时到达 → Yield 让出 -->
+        <mxCell id="dec_rt_arrive" value="" style="endArrow=block;endFill=1;strokeWidth=2;strokeColor=#CC0000;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="110" as="sourcePoint"/>
+            <mxPoint x="660" y="293" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- 硬实时执行在 yield 处 -->
+        <mxCell id="dec_rt_exec" value="&lt;font color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;τ_H&lt;/b&gt;&lt;/font&gt;" style="rounded=0;fillColor=#CC0000;strokeColor=#990000;fontColor=#FFFFFF;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="660" y="296" width="8" height="45" as="geometry"/>
+        </mxCell>
+
+        <!-- 阻塞标注 (decode) -->
+        <mxCell id="dec_bmax_arr" value="" style="endArrow=block;endFill=1;startArrow=block;startFill=1;strokeColor=#006600;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="656" y="360" as="sourcePoint"/>
+            <mxPoint x="668" y="360" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dec_bmax_lbl" value="&lt;font color=&quot;#006600&quot;&gt;&lt;b&gt;B_max ≤ 5.35 ms ✓&lt;/b&gt;&lt;/font&gt;" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="620" y="367" width="130" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== Inset: 对比条形图 ==================== -->
+        <mxCell id="inset_bg" value="" style="rounded=1;whiteSpace=wrap;fillColor=#FAFAFA;strokeColor=#999999;strokeWidth=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="120" width="430" height="250" as="geometry"/>
+        </mxCell>
+        <mxCell id="inset_title" value="&lt;b&gt;Worst-Case Blocking Comparison&lt;/b&gt;" style="text;html=1;fontSize=11;align=center;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="125" width="250" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- Bar 1: Token-level (Prefill) -->
+        <mxCell id="bar1_label" value="Token-level&lt;br&gt;(Prefill)" style="text;html=1;fontSize=9;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="958" y="155" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar1" value="" style="rounded=0;fillColor=#FF6666;strokeColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="1042" y="155" width="330" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar1_val" value="&lt;b&gt;~1100 ms ❌&lt;/b&gt;" style="text;html=1;fontSize=9;align=left;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="158" width="80" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Bar 2: Token-level (Decode) -->
+        <mxCell id="bar2_label" value="Token-level&lt;br&gt;(Decode)" style="text;html=1;fontSize=9;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="958" y="190" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar2" value="" style="rounded=0;fillColor=#FF9999;strokeColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="1042" y="195" width="37" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar2_val" value="&lt;b&gt;122 ms ❌&lt;/b&gt;" style="text;html=1;fontSize=9;align=left;fontColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="1082" y="198" width="70" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Bar 3: L-CPS (Prefill) -->
+        <mxCell id="bar3_label" value="L-CPS&lt;br&gt;(Prefill)" style="text;html=1;fontSize=9;align=right;verticalAlign=middle;fontColor=#006600;" vertex="1" parent="1">
+          <mxGeometry x="958" y="230" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar3" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;" vertex="1" parent="1">
+          <mxGeometry x="1042" y="235" width="3" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar3_val" value="&lt;b&gt;5.91 ms ✓&lt;/b&gt;" style="text;html=1;fontSize=9;align=left;fontColor=#006600;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="238" width="70" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Bar 4: L-CPS (Decode) -->
+        <mxCell id="bar4_label" value="L-CPS&lt;br&gt;(Decode)" style="text;html=1;fontSize=9;align=right;verticalAlign=middle;fontColor=#006600;" vertex="1" parent="1">
+          <mxGeometry x="958" y="270" width="80" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar4" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;" vertex="1" parent="1">
+          <mxGeometry x="1042" y="275" width="2" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="bar4_val" value="&lt;b&gt;5.35 ms ✓&lt;/b&gt;" style="text;html=1;fontSize=9;align=left;fontColor=#003399;" vertex="1" parent="1">
+          <mxGeometry x="1048" y="278" width="70" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- Deadline 虚线 -->
+        <mxCell id="deadline_line" value="" style="endArrow=none;strokeWidth=2;strokeColor=#FF0000;dashed=1;dashPattern=8 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1072" y="150" as="sourcePoint"/>
+            <mxPoint x="1072" y="310" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="deadline_lbl" value="&lt;font color=&quot;#FF0000&quot;&gt;&lt;b&gt;Deadline&lt;br&gt;100 ms&lt;/b&gt;&lt;/font&gt;" style="text;html=1;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1072" y="310" width="50" height="28" as="geometry"/>
+        </mxCell>
+
+        <!-- Inset 关键结论 -->
+        <mxCell id="inset_conclusion" value="&lt;font color=&quot;#006600&quot;&gt;&lt;b&gt;B_max = max(5.91, 5.35) = 5.91 ms ≪ 100 ms&lt;/b&gt;&lt;/font&gt;" style="text;html=1;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="980" y="345" width="380" height="20" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== 层块放大示意 ==================== -->
+        <mxCell id="zoom_bg" value="" style="rounded=1;whiteSpace=wrap;fillColor=#FFF8E1;strokeColor=#F9A825;strokeWidth=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="390" width="430" height="105" as="geometry"/>
+        </mxCell>
+        <mxCell id="zoom_title" value="&lt;b&gt;Layer Block Detail (Zoom)&lt;/b&gt;" style="text;html=1;fontSize=10;align=center;fontColor=#E65100;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="393" width="200" height="18" as="geometry"/>
+        </mxCell>
+
+        <!-- 层块 l -->
+        <mxCell id="zoom_layer" value="&lt;b&gt;Layer l&lt;/b&gt;&lt;br&gt;(atomic)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#8FAADC;strokeColor=#4472C4;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="975" y="420" width="130" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="zoom_layer_t" value="t_layer ≈ 4.35 ms (decode)&lt;br&gt;t_layer ≈ 4.91 ms (prefill)" style="text;html=1;fontSize=8;align=center;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="965" y="458" width="160" height="28" as="geometry"/>
+        </mxCell>
+
+        <!-- Yield check -->
+        <mxCell id="zoom_yield" value="&lt;font color=&quot;#FF6600&quot;&gt;&lt;b&gt;▼ Yield&lt;br&gt;Check&lt;/b&gt;&lt;/font&gt;" style="text;html=1;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1110" y="418" width="50" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="zoom_yield_arrow" value="" style="endArrow=block;endFill=1;strokeColor=#FF6600;strokeWidth=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1135" y="448" as="sourcePoint"/>
+            <mxPoint x="1135" y="462" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoom_yield_cond" value="Q_high ≠ ∅ ∧ B ≤ B_th ?" style="text;html=1;fontSize=8;align=center;fontColor=#FF6600;" vertex="1" parent="1">
+          <mxGeometry x="1095" y="464" width="140" height="14" as="geometry"/>
+        </mxCell>
+
+        <!-- Switch -->
+        <mxCell id="zoom_switch" value="&lt;font color=&quot;#999999&quot;&gt;&lt;b&gt;ctx switch&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#999999;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="420" width="40" height="35" as="geometry"/>
+        </mxCell>
+        <mxCell id="zoom_switch_t" value="~1 ms" style="text;html=1;fontSize=8;align=center;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="458" width="40" height="14" as="geometry"/>
+        </mxCell>
+
+        <!-- 硬实时执行 -->
+        <mxCell id="zoom_rt" value="&lt;font color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;τ_H exec&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CC0000;strokeColor=#990000;fontSize=9;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="1215" y="420" width="60" height="35" as="geometry"/>
+        </mxCell>
+
+        <!-- Switch back -->
+        <mxCell id="zoom_switch2" value="&lt;font color=&quot;#999999&quot;&gt;&lt;b&gt;restore&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E0E0E0;strokeColor=#999999;fontSize=8;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="420" width="40" height="35" as="geometry"/>
+        </mxCell>
+
+        <!-- 下一层 -->
+        <mxCell id="zoom_next" value="&lt;b&gt;Layer l+1&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#8FAADC;strokeColor=#4472C4;fontSize=9;" vertex="1" parent="1">
+          <mxGeometry x="1325" y="420" width="45" height="35" as="geometry"/>
+        </mxCell>
+
+        <!-- B_max 括号 -->
+        <mxCell id="zoom_bmax_arr" value="" style="endArrow=block;endFill=1;startArrow=block;startFill=1;strokeColor=#006600;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="975" y="478" as="sourcePoint"/>
+            <mxPoint x="1210" y="478" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zoom_bmax_lbl" value="&lt;font color=&quot;#006600&quot;&gt;&lt;b&gt;B_max = t_layer + t_switch ≤ 5.91 ms&lt;/b&gt;&lt;/font&gt;" style="text;html=1;fontSize=9;align=center;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="480" width="230" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== 图例 ==================== -->
+        <mxCell id="legend_bg" value="" style="rounded=1;whiteSpace=wrap;fillColor=#F5F5F5;strokeColor=#CCCCCC;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="400" width="400" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="legend_title" value="&lt;b&gt;Legend&lt;/b&gt;" style="text;html=1;fontSize=10;align=left;" vertex="1" parent="1">
+          <mxGeometry x="110" y="403" width="60" height="18" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="leg1_box" value="" style="rounded=0;fillColor=#A9D18E;strokeColor=#548235;" vertex="1" parent="1">
+          <mxGeometry x="115" y="425" width="20" height="12" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg1_txt" value="Prefill layer block (~4.91 ms)" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="140" y="423" width="160" height="16" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="leg2_box" value="" style="rounded=0;fillColor=#8FAADC;strokeColor=#4472C4;" vertex="1" parent="1">
+          <mxGeometry x="115" y="443" width="20" height="12" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg2_txt" value="Decode layer block (~4.35 ms)" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="140" y="441" width="160" height="16" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="leg3_box" value="" style="rounded=0;fillColor=#CC0000;strokeColor=#990000;" vertex="1" parent="1">
+          <mxGeometry x="115" y="461" width="20" height="12" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg3_txt" value="Hard real-time task (τ_H)" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="140" y="459" width="160" height="16" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="leg4_box" value="" style="rounded=0;fillColor=#E0E0E0;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="115" y="479" width="20" height="12" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg4_txt" value="Context switch (~1 ms)" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="140" y="477" width="160" height="16" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="leg5_sym" value="&lt;font color=&quot;#FF6600&quot;&gt;▼&lt;/font&gt;" style="text;html=1;fontSize=10;align=center;" vertex="1" parent="1">
+          <mxGeometry x="315" y="423" width="20" height="16" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg5_txt" value="Yield check point (Eq. 6)" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="338" y="423" width="150" height="16" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="leg6_box" value="" style="rounded=0;fillColor=#FFE0E0;strokeColor=#CC0000;" vertex="1" parent="1">
+          <mxGeometry x="315" y="443" width="20" height="12" as="geometry"/>
+        </mxCell>
+        <mxCell id="leg6_txt" value="Blocking region (baseline)" style="text;html=1;fontSize=9;align=left;" vertex="1" parent="1">
+          <mxGeometry x="338" y="441" width="150" height="16" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="leg7_line" value="" style="endArrow=none;strokeWidth=2;strokeColor=#FF0000;dashed=1;dashPattern=6 3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="467" as="sourcePoint"/>
+            <mxPoint x="335" y="467" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg7_txt" value="100 ms hard deadline" style="text;html=1;fontSize=9;align=left;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="338" y="459" width="130" height="16" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="leg8_line2" value="" style="endArrow=none;strokeWidth=1;strokeColor=#999999;dashed=1;dashPattern=5 3;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="315" y="485" as="sourcePoint"/>
+            <mxPoint x="335" y="485" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="leg8_txt" value="Phase boundary" style="text;html=1;fontSize=9;align=left;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="338" y="477" width="100" height="16" as="geometry"/>
+        </mxCell>
+
+        <!-- ==================== 关键数值标注 (时间轴下方) ==================== -->
+        <mxCell id="note_final" value="&lt;font color=&quot;#006600&quot;&gt;&lt;b&gt;System-wide: B_max = 5.91 ms ≪ D = 100 ms → Hard RT guarantee holds across all phases&lt;/b&gt;&lt;/font&gt;" style="text;html=1;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="400" y="530" width="600" height="25" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
