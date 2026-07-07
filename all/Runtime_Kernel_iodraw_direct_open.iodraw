@@ -1,6 +1,6 @@
 <mxfile host="www.iodraw.com" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0" version="24.7.17">
   <diagram id="runtime-kernel-five-layer-fixed" name="Runtime Kernel 五层架构图">
-    <mxGraphModel dx="1120" dy="578" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="930" math="0" shadow="0">
+    <mxGraphModel dx="1360" dy="701" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="930" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -121,8 +121,11 @@
         <mxCell id="L5_m4" value="openEuler / Linux" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#555555;strokeWidth=1.5;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="1040" y="802" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="edge_L1_L2" value="事件流" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;fontSize=14;fontStyle=1;" parent="1" source="L1" target="L2" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="edge_L1_L2" value="事件流" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;fontSize=14;fontStyle=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="827.4694117647059" y="540" as="sourcePoint" />
+            <mxPoint x="680.9988235294118" y="590" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="edge_L2_L3" value="工具 / 令牌 / 上下文请求" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;fontSize=13;fontStyle=1;" parent="1" source="L2" target="L3" edge="1">
           <mxGeometry relative="1" as="geometry" />
