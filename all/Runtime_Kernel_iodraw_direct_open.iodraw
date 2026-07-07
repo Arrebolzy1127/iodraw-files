@@ -86,7 +86,7 @@
           <mxGeometry x="915" y="538.75" width="299" height="47.5" as="geometry" />
         </mxCell>
         <mxCell id="L4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAF3FF;strokeColor=#6B2BBF;strokeWidth=2;arcSize=8;" parent="1" vertex="1">
-          <mxGeometry x="241" y="921" width="730" height="150" as="geometry" />
+          <mxGeometry x="266" y="921" width="730" height="150" as="geometry" />
         </mxCell>
         <mxCell id="L4_title" value="④ 可观测层" style="text;html=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#6B2BBF;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="256" y="928" width="700" height="24" as="geometry" />
