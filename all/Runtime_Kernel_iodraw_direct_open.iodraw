@@ -41,9 +41,9 @@
           <mxGeometry x="230" y="310" width="730" height="230" as="geometry" />
         </mxCell>
         <mxCell id="L2_title" value="② 智能体运行时内核层（Runtime Kernel 核心）" style="text;html=1;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1;fontColor=#087A2B;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="245" y="318" width="700" height="28" as="geometry" />
+          <mxGeometry x="195" y="319" width="700" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="L2_brace" value="核心控制面" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#087A2B;fontStyle=1;align=center;verticalAlign=middle;rotation=-90;" parent="1" vertex="1">
+        <mxCell id="L2_brace" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;核心控制面&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#087A2B;fontStyle=1;align=center;verticalAlign=middle;rotation=-90;" parent="1" vertex="1">
           <mxGeometry x="82" y="387" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="L2_m1" value="动态任务管理器&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;事件触发 / DAG 展开 / 依赖维护&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#098B2E;strokeWidth=1.5;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
