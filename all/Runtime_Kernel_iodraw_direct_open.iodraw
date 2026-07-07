@@ -65,7 +65,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="L3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F7FF;strokeColor=#0B55BB;strokeWidth=2;arcSize=8;" parent="1" vertex="1">
-          <mxGeometry x="203.5" y="496" width="1135.5" height="139" as="geometry" />
+          <mxGeometry x="203.5" y="496" width="1050.5" height="139" as="geometry" />
         </mxCell>
         <mxCell id="L3_title" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;③ 资源 / 上下文 / 通信层&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#0B55BB;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="531" y="503" width="290" height="25" as="geometry" />
@@ -74,7 +74,7 @@
           <mxGeometry x="234" y="538.5" width="256" height="48" as="geometry" />
         </mxCell>
         <mxCell id="L3_m2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;上下文存储&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;context_ref / context_version / 访问控制 / 内容寻址&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="531" y="536.75" width="379" height="52" as="geometry" />
+          <mxGeometry x="516" y="536.75" width="379" height="52" as="geometry" />
         </mxCell>
         <mxCell id="L3_m3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;令牌与工具槽管理器&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;token slot / tool slot / context window&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="951" y="536.75" width="299" height="47.5" as="geometry" />
