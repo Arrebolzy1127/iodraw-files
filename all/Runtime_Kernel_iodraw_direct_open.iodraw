@@ -132,10 +132,8 @@
             <mxPoint x="741" y="439" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge_L2_L4" value="运行状态 / 指标事件" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6B2BBF;strokeWidth=1.5;dashed=1;endArrow=block;endFill=1;fontSize=12;fontColor=#6B2BBF;" parent="1" source="L2" target="L4" edge="1">
-          <mxGeometry x="-0.1055" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="edge_L2_L4" value="运行状态 / 指标事件" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6B2BBF;strokeWidth=1.5;dashed=1;endArrow=block;endFill=1;fontSize=12;fontColor=#6B2BBF;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="L2" target="L4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="edge_L3_L4" value="资源 / 消息 / 上下文指标" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6B2BBF;strokeWidth=1.5;dashed=1;endArrow=block;endFill=1;fontSize=12;fontColor=#6B2BBF;" parent="1" source="L3" target="L4" edge="1">
           <mxGeometry relative="1" as="geometry" />
