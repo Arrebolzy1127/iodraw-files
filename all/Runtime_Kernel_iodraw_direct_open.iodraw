@@ -35,7 +35,7 @@
           <mxGeometry x="606.5" y="201" width="165" height="42" as="geometry" />
         </mxCell>
         <mxCell id="L2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1FFF5;strokeColor=#098B2E;strokeWidth=2;arcSize=8;" parent="1" vertex="1">
-          <mxGeometry x="129" y="292" width="1256" height="243" as="geometry" />
+          <mxGeometry x="129" y="292" width="1256" height="147" as="geometry" />
         </mxCell>
         <mxCell id="L2_title" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;② 智能体运行时内核层（Runtime Kernel 核心）&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1;fontColor=#087A2B;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="205" y="301" width="700" height="28" as="geometry" />
