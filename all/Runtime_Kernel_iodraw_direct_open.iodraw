@@ -147,7 +147,7 @@
             <mxPoint x="24" y="739" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge_Fault_L2" value="故障反馈 / 恢复调度" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#E66A00;strokeWidth=1.8;dashed=1;endArrow=block;endFill=1;fontSize=12;fontColor=#B13A00;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="L3_m2" target="Fault" edge="1">
+        <mxCell id="edge_Fault_L2" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;故障反馈 / 恢复调度&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#E66A00;strokeWidth=1.8;dashed=1;endArrow=block;endFill=1;fontSize=12;fontColor=#B13A00;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="L3_m2" target="Fault" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="879" y="682" />
