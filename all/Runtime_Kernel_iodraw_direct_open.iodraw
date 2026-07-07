@@ -8,7 +8,7 @@
           <mxGeometry x="470" y="20" width="460" height="52" as="geometry" />
         </mxCell>
         <mxCell id="L1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF7EF;strokeColor=#894343;strokeWidth=2;arcSize=8;" parent="1" vertex="1">
-          <mxGeometry x="190" y="93" width="1103" height="167" as="geometry" />
+          <mxGeometry x="190" y="87" width="1060" height="173" as="geometry" />
         </mxCell>
         <mxCell id="L1_title" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;① 智慧城市场景层&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;fontSize=20;fontStyle=1;fontColor=#B13A00;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="199" y="100" width="980" height="26" as="geometry" />
