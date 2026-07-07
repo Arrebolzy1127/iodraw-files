@@ -80,7 +80,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="L3_m2" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;上下文存储&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;context_ref / context_version / 访问控制 / 内容寻址&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="499.5" y="536.75" width="379" height="52" as="geometry" />
+          <mxGeometry x="531" y="538.75" width="379" height="52" as="geometry" />
         </mxCell>
         <mxCell id="L3_m3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;令牌与工具槽管理器&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;token slot / tool slot / context window&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.5;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="915" y="538.75" width="299" height="47.5" as="geometry" />
@@ -150,9 +150,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="edge_L3_L4" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;资源 / 消息 / 上下文指标&lt;/b&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#6B2BBF;strokeWidth=1.5;dashed=1;endArrow=block;endFill=1;fontSize=12;fontColor=#6B2BBF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="L3" target="L4" edge="1">
-          <mxGeometry x="0.0194" y="45" relative="1" as="geometry">
+          <mxGeometry x="0.6471" y="51" relative="1" as="geometry">
             <Array as="points" />
-            <mxPoint as="offset" />
+            <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="edge_L2_L5" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 17px;&quot;&gt;进程启动 / 生命周期控制&lt;/b&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;fontSize=12;fontColor=#333333;exitX=0.465;exitY=0.981;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="L3" target="L5" edge="1">
