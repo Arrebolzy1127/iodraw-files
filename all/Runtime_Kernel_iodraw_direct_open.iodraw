@@ -26,7 +26,7 @@
           <mxGeometry x="700" y="135" width="366" height="88" as="geometry" />
         </mxCell>
         <mxCell id="L1_d" value="场景事件输出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#D65F00;strokeWidth=1.5;fontSize=15;align=center;verticalAlign=middle;dashed=1;" parent="1" vertex="1">
-          <mxGeometry x="1000" y="158" width="165" height="42" as="geometry" />
+          <mxGeometry x="492" y="195" width="165" height="42" as="geometry" />
         </mxCell>
         <mxCell id="L2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1FFF5;strokeColor=#098B2E;strokeWidth=2;arcSize=8;" parent="1" vertex="1">
           <mxGeometry x="230" y="310" width="730" height="230" as="geometry" />
