@@ -23,13 +23,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="L1_b" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;天气 / 拥堵 / 车辆状态&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.5;fontSize=15;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="583" y="151" width="230" height="42" as="geometry" />
+          <mxGeometry x="578.5" y="152" width="230" height="42" as="geometry" />
         </mxCell>
         <mxCell id="LMyVnWVh7eiDGumByEb4-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#cd7070;" edge="1" parent="1" source="L1_c" target="L1_d">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="L1_c" value="&lt;font style=&quot;font-size: 21px; font-weight: normal;&quot;&gt;城市服务智能体群&lt;br&gt;&lt;font style=&quot;font-size: 21px;&quot;&gt;警务 / 救护 / 消防 / 交管&lt;br&gt;公交 / 出租 / 地铁&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.5;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="889" y="122" width="293" height="88" as="geometry" />
+          <mxGeometry x="889" y="129" width="293" height="88" as="geometry" />
         </mxCell>
         <mxCell id="L1_d" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;场景事件输出&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1.5;fontSize=15;align=center;verticalAlign=middle;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="609.5" y="216" width="165" height="42" as="geometry" />
