@@ -1,6 +1,6 @@
 <mxfile host="www.iodraw.com" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0" version="24.7.17">
   <diagram id="runtime-kernel-five-layer-fixed" name="Runtime Kernel 五层架构图">
-    <mxGraphModel dx="1587" dy="818" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="930" math="0" shadow="0">
+    <mxGraphModel dx="2987" dy="818" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="930" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -86,7 +86,7 @@
           <mxGeometry x="915" y="538.75" width="299" height="47.5" as="geometry" />
         </mxCell>
         <mxCell id="L4" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAF3FF;strokeColor=#6B2BBF;strokeWidth=2;arcSize=8;" parent="1" vertex="1">
-          <mxGeometry x="58" y="972" width="730" height="294" as="geometry" />
+          <mxGeometry x="-54" y="730" width="261" height="294" as="geometry" />
         </mxCell>
         <mxCell id="L4_title" value="④ 可观测层" style="text;html=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#6B2BBF;align=center;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="256" y="928" width="700" height="24" as="geometry" />
@@ -168,7 +168,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="caption" value="从场景层、Kernel 层、资源 / 上下文 / 通信层、可观测层到底层 OS 与部署层，形成完整运行时闭环。" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontStyle=1;fontColor=#111111;align=center;verticalAlign=middle;" parent="1" vertex="1">
-          <mxGeometry x="157" y="1114" width="1120" height="24" as="geometry" />
+          <mxGeometry x="436" y="1066" width="1120" height="24" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
