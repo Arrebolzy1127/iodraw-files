@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="L1" value="① 迷你智慧城市场景层" style="swimlane;html=1;rounded=1;whiteSpace=wrap;startSize=38;fontSize=16;fontStyle=1;collapsible=0;container=1;strokeWidth=2;fillColor=#FFF7ED;strokeColor=#FDBA74;fontColor=#7C2D12;" parent="1" vertex="1">
-          <mxGeometry x="60" y="60" width="360" height="340" as="geometry" />
+          <mxGeometry x="64" y="60" width="360" height="340" as="geometry" />
         </mxCell>
         <mxCell id="p39o7I4cpppGDpGYEWLH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="L1" source="S1" target="S2" edge="1">
           <mxGeometry relative="1" as="geometry" />
