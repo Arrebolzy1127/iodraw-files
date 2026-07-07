@@ -127,7 +127,7 @@
             <mxPoint x="691.9988235294118" y="926" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge_L2_L3" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;工具 / 令牌 / 上下文请求&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;fontSize=13;fontStyle=1;entryX=0.453;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.439;exitY=1.018;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="L2" target="L3" edge="1">
+        <mxCell id="edge_L2_L3" value="&lt;font style=&quot;font-size: 17px;&quot;&gt;工具 / 令牌 / 上下文请求&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;strokeWidth=2;endArrow=block;endFill=1;fontSize=13;fontStyle=1;entryX=0.453;entryY=0.043;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.439;exitY=1.018;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="L2" target="L3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="741" y="439" as="sourcePoint" />
           </mxGeometry>
@@ -147,7 +147,7 @@
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="edge_L2_L5" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;进程启动 / 生命周期控制&lt;/b&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;fontSize=12;fontColor=#333333;exitX=0.465;exitY=0.981;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="L3" target="L5" edge="1">
+        <mxCell id="edge_L2_L5" value="&lt;font size=&quot;1&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 17px;&quot;&gt;进程启动 / 生命周期控制&lt;/b&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#333333;strokeWidth=1.5;endArrow=block;endFill=1;fontSize=12;fontColor=#333333;exitX=0.465;exitY=0.981;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="L3" target="L5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="692" y="732" />
